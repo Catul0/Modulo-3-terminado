@@ -1,0 +1,18 @@
+.btn {
+    display: inline-block;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: inherit;
+    position: absolute;
+    right: 3px; 
+    top: 82px; 
+    z-index: 3; 
+    background-color: #777; 
+    border-color: #777;
+}

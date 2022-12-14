@@ -1,0 +1,36 @@
+<form [formGroup]="myForm" (ngSubmit)="submitFormulario()">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Usuario</label>
+        <input 
+            formControlName="usuario"
+            [class.is-invalid]="f.usuario.errors && f.usuario.touched"
+            type="ussername" 
+            class="form-control" 
+            aria-describedby="emailHelp"
+        >
+        <div 
+            id="validationServerUsernameFeedback"
+            class="invalid-feedback"
+        >Usuario Obligatorio!</div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+        <input 
+            formControlName="password" 
+            [class.is-invalid]="f.password.errors && f.password.touched"
+            type="password" 
+            class="form-control"
+        >
+        <div 
+            id="validationServerUsernameFeedback"
+            class="invalid-feedback"
+        >Contraseña Obligatoria!</div>
+    </div>
+    <button 
+        class="btn btn-primary"
+        style="background-color: rgb(108,117,125); border-color: rgb(108,117,125);"
+    >
+        Entrar
+    </button>
+</form>
+      

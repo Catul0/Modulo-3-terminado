@@ -1,0 +1,21 @@
+<div 
+    class="card" 
+    style="margin-top: 25px;"
+>
+    <h3 class="card-body text-center">Sobre Mi</h3>
+    <app-boton-add-info
+        *ngIf="loginPrd.variable"
+        text="{{showAddInfo ? 'Cerrar': 'Agregar Informacion'}}"
+        (btnAddInfoCLick)="abrirAgregarInfo()"
+    > 
+    </app-boton-add-info>
+    <app-contenido-info
+        *ngFor="let inf of info;"
+        [inf]="inf"
+        (onDeleteInformacion) = "deleteInfo(inf)"
+    ></app-contenido-info>
+    <app-edit-info
+        (onEditInfo)="onEdit($event)"
+    >
+    </app-edit-info>
+</div>

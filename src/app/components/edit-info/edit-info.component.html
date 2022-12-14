@@ -1,0 +1,27 @@
+<form 
+    class="add-form"
+    (ngSubmit)="onGuardar()"
+    *ngIf="showAddInfo"
+>
+    <div class="form-control">
+        <label for="titulo">Titulo</label>
+        <input 
+            type="text" 
+            name="titulo" 
+            id="titulo" 
+            placeholder="Añade un nuevo Subitulo"
+            [(ngModel)]="titulo"
+        >
+    </div>
+    <div class="form-control">
+        <label for="texto">Descripcion</label>
+        <input 
+            type="text" 
+            name="texto" 
+            id="texto"
+            placeholder="Añade una nueva Descripcion"
+            [(ngModel)]="texto"
+        >
+    </div>
+    <input type="submit" value="Guardar Cambios" class="btn btn-block">
+</form>

@@ -1,0 +1,21 @@
+<div id="slid">
+    <h3 class="card-body text-center"  style="margin-top: 45px;margin-bottom:35px;">Slider proyectos</h3>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade container-fluid" data-bs-ride="carousel">
+        
+      <div  class="carousel-inner">
+        <div *ngFor="let slid of slider">
+        <div class="carousel-item active">
+          <img [src]="slid.photo" style="height:auto" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>

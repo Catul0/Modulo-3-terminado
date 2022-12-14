@@ -1,0 +1,25 @@
+<div 
+  class="card text-bg-dark" 
+  style="margin-top: 45px;"
+  *ngFor="let porta of portadaa"
+>
+    <img 
+      [src]="porta.fondo" 
+      style="height:350px; background-repeat: no-repeat; background-size:cover; background-attachment: fixed; background-position: center;" 
+      class="card-img" alt="..."
+    >
+    <div class="card-img-overlay text-start" style="margin-top:85px ;">
+      <img 
+        [src]="porta.photo" 
+        class="rounded-circle" 
+        style="object-fit: cover; object-position: top;height: 200px;width: 200px;" 
+        alt=""
+      >
+      <h5 
+        class="card-title bg-dark bg-opacity-50"
+      >
+      {{porta.nombre}}
+      </h5>
+      
+    </div>
+</div>
