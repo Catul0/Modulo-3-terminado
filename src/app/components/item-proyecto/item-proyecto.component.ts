@@ -20,4 +20,10 @@ export class ItemProyectoComponent implements OnInit {
   onDelete(proyecto: Proyecto){
     this.onDeleteProyect.emit(proyecto);
   }
+  referencia(proyect:Proyecto){
+    if(proyect.link=="#proyectoss"){
+      alert("no hay ningun link asociado")
+    }
+    return
+  }
 }

@@ -16,3 +16,9 @@
     background-color: #777; 
     border-color: #777;
 }
+@media only screen and (max-width: 600px){
+
+    .btn {
+        top: 50px;
+    }
+}

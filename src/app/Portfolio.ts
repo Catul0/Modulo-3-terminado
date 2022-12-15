@@ -3,6 +3,7 @@ export interface Proyecto { //esta es la estructura de proyectos
     photo: string;
     title: string;
     text: string;
+    link: string;
 }
 export interface Info{ //este es la estructura de sobreMi
     id?: number;

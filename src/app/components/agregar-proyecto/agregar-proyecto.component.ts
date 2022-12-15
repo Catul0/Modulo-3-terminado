@@ -1,4 +1,3 @@
-import { NumberFormatStyle } from '@angular/common';
 import { Component, OnInit, Output,EventEmitter } from '@angular/core';
 import { Proyecto } from '../../Portfolio';
 import { UiService } from '../../service/ui.service';
@@ -16,6 +15,7 @@ export class AgregarProyectoComponent implements OnInit {
   title: string="";
   text: string="";
   photo: string="./assets/imagenes/default.png";
+  link: string="#proyectoss";
   showAddProyect: boolean=false;
   constructor(
     private uiServise: UiService
@@ -35,8 +35,8 @@ export class AgregarProyectoComponent implements OnInit {
       alert("Por favor añade una descrpicion del proyecto");
       return
     }
-    const {id,photo,title,text} = this
-    const newProyect = {id,photo,title,text}
+    const {id,photo,title,text,link} = this
+    const newProyect = {id,photo,title,text,link}
 
     this.onAddProyect.emit(newProyect);
   }

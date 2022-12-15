@@ -25,9 +25,10 @@
             <p class="card-text">{{proyect.text}}</p>
         </div>
         <a 
-            href="" 
+            [href]="proyect.link" 
             class="btn btn-primary" 
             style="background-color: rgb(108,117,125); border-color: rgb(108,117,125);"
+            (click)="referencia(proyect)"
         > 
             Descargar 
         </a>
