@@ -54,11 +54,11 @@
       "link": "#proyectoss"
     },
     {
-      "id": 6,
-      "photo": "./assets/imagenes/default.png",
-      "title": "pepito verdulero",
-      "text": "esto es un ejemplo de app para ver si funciona el agregado de objetos",
-      "link": "#proyectoss"
+      "id": 7,
+      "photo": "./assets/imagenes/portfolioAngular.png",
+      "title": "Esta misma pagina",
+      "text": "Mi primer portfolio con login, angular, bootstrap, ts, html, css; Con una simulación de base de dato con json server y modificación de este mismo",
+      "link": "https://github.com/Catul0/Modulo-3-terminado.git"
     }
   ],
   "miSlider": [

@@ -37,9 +37,6 @@ export class LoginComponent implements OnInit {
     if(!this.loginPrd.ingresarAplicativo(this.myForm.value)){
       alert("Usuario o Contraseña Invalido");
     }
-
-    console.log(this.myForm);
-    console.log(this.loginPrd.ingresarAplicativo(this.myForm.value))
   }
   
 

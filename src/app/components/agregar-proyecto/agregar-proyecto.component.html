@@ -23,5 +23,15 @@
             [(ngModel)]="text"
         >
     </div>
+    <div class="form-control">
+        <label for="text">Link</label>
+        <input 
+            type="text" 
+            name="link" 
+            id="link"
+            placeholder="Link de github, direccion de pagina o direccion para descargar"
+            [(ngModel)]="link"
+        >
+    </div>
     <input type="submit" value="Guardar Proyecto" class="btn btn-block">
 </form>
