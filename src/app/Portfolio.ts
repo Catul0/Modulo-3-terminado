@@ -16,7 +16,9 @@ export interface Portada { //esta es la estructura de la portada
     fondo: string;
     nombre: string;
 }
-export interface Slider { //esta es la estructura del slider
+export interface Skill { //esta es la estructura del apartado de habilidades
     id? : number;
-    photo: string;
+    titulo: string;
+    texto:string;
+    nivel:string;
 }

@@ -1,0 +1,33 @@
+<div class="col" >
+    <div class="card" >
+        <div 
+            *ngIf="loginPrd.variable"
+            class="btn btn-primary" 
+            style="position: absolute; right: 3px; top: 3px; z-index: 3; background-color: #777; border-color: #777;" 
+            (click)="onDelete(habilidad)"
+        >
+            <svg  
+                xmlns="http://www.w3.org/2000/svg" 
+                width="16" height="16" 
+                fill="currentColor" 
+                class="bi bi-x-lg" 
+                viewBox="0 0 16 16">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+            </svg>
+        </div>
+        <div class="card-header">
+            <h5 class="card-title">{{habilidad.titulo}}</h5>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">{{habilidad.texto}}</li>
+                <li 
+                    style="background-color: {{obtenerColor(habilidad)}};"
+                    class="list-group-item"
+                >
+                    Nivel: {{habilidad.nivel}}
+                </li>
+              </ul>
+        </div>
+    </div>
+</div>

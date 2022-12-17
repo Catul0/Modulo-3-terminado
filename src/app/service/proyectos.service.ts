@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
-import { Proyecto, Info} from '../Portfolio';
+import { Proyecto} from '../Portfolio';
 
 const httpOptions = {
   headers: new HttpHeaders({

@@ -1,0 +1,37 @@
+<div 
+    class="card" 
+    style="background-image:url(resources/Midnight\ City.jpg);padding-bottom: 35px;padding-top: 10px;"
+>
+    <h3 
+        class="card-header text-center text" 
+        style="margin-top: 20px;margin-bottom: 60px;"
+    >
+        Habilidades
+    </h3>
+    <app-boton-add-skill
+        *ngIf="loginPrd.variable"
+        text="{{showAddSkill ? 'Cerrar': 'Agregar Habilidad'}}"
+        (btnAddCLick)="abrirAgregarSkill()"
+    ></app-boton-add-skill>
+
+    <div class="container" *ngIf="loginPrd.variable">
+        <div class="row">
+            <div class="col">
+                <app-agregar-skill
+                style="align-items: center;"
+                (onAddSkill)="addSkill($event)"
+            ></app-agregar-skill>
+            </div>
+        </div>
+    </div>
+     <div class="row row-cols-1 row-cols-md-4 g-4 container-fluid" >
+        <app-item-skill
+        style="margin-top: 20px;"
+        *ngFor="let habilidad of habilidades"
+        [habilidad]= "habilidad"
+        (onDeleteSkill)="deleteSkill(habilidad)"
+        ></app-item-skill>
+    </div>
+     
+   
+</div>

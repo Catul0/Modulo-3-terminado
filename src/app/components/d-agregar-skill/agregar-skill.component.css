@@ -8,6 +8,8 @@ body{
     font-family: sans-serif;    
 }
 .add-form{
+    align-items: center;
+    width: 100%;
     margin-bottom: 30px;
 }
 .container{
@@ -42,6 +44,7 @@ body{
 }
 
 .form-control {
+    
     margin: 20px 0;
 }
 
@@ -50,7 +53,7 @@ body{
 }
 
 .form-control input {
-    width: 100%;
+    width: 99%;
     height: 40px;
     margin: 5px;
     padding: 3px 7px;

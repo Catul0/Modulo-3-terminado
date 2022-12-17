@@ -1,0 +1,43 @@
+
+<form 
+    class="add-form"
+    (ngSubmit)="onSubmit()"
+    *ngIf="showAddSkill"
+>
+    <div class="form-control">
+        <label for="title">Nombre de la habilidad</label>
+        <input 
+            type="text" 
+            name="titulo" 
+            id="titulo" 
+            placeholder="Añade un Nombre la nueva habilidad"
+            [(ngModel)]="titulo"
+        >
+    </div>
+    <div class="form-control">
+        <label for="text">Descripcion</label>
+        <input 
+            type="text" 
+            name="texto" 
+            id="texto"
+            placeholder="Añade una breve Descripcion"
+            [(ngModel)]="texto"
+        >
+    </div>
+    <div 
+        class="btn-toolbar" 
+        role="toolbar" 
+        aria-label="Toolbar with button groups">
+        <div 
+            class="btn-group mr-2"
+            style="display: contents;" 
+            role="group" 
+            aria-label="First group">
+          <button type="button" style="background-color: rgb(18, 216, 18) ;" (click)="tomarNivelBajo()"  class="btn btn-secondary">Medio Bajo</button>
+          <button type="button" style="background-color: rgb(13, 153, 13);" (click)="tomarNivelMedio()" class="btn btn-secondary">Medio</button>
+          <button type="button" style="background-color: green;" (click)="tomarNivelBueno()" class="btn btn-secondary">Bueno</button>
+          <button type="button" style="background-color: rgb(7, 88, 7);" (click)="tomarNivelMuyBueno()" class="btn btn-secondary">Muy Bueno</button>
+        </div>
+      </div>
+    <input type="submit" value="Guardar Habilidad" class="btn btn-block">
+</form>

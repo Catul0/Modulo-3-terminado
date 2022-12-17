@@ -17,8 +17,15 @@
         [inf]="inf"
         (onDeleteInformacion) = "deleteInfo(inf)"
     ></app-contenido-info>
-    <app-edit-info
-        (onEditInfo)="onEdit($event)"
-    >
-    </app-edit-info>
+
+    <div class="container" *ngIf="loginPrd.variable">
+        <div class="row">
+            <div class="col">
+                <app-edit-info
+                    (onEditInfo)="onEdit($event)"
+                ></app-edit-info>
+            </div>
+        </div>
+    </div>
+    
 </div>

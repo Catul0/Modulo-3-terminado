@@ -7,12 +7,12 @@
   },
   "sobreMi": [
     {
-      "id": 1,
+      "id": 3,
       "titulo": "Full Stack Web Developer",
-      "texto": "Hola! Soy Valentín Sigaudo, tengo 23 años, estudiante de ingenieria en sistemas, programador de C++, Python, HTML, CSS, JS y con titulo de auxiliar bilingue de Ingles, no tengo experiencia laboral en el ambito del desarrollo pero aprendo rapido y estoy dispuesto a conocer las tecnologias necesarias para trabajar"
+      "texto": "Hola! Soy Valentín Sigaudo, tengo 23 años, estudiante de ingenieria en sistemas, programador de C++, Python, HTML, CSS y JavaScript. No tengo experiencia laboral en el ámbito del desarrollo pero aprendo rápido y estoy dispuesto a conocer las tecnologías necesarias para trabajar"
     },
     {
-      "id": 2,
+      "id": 4,
       "titulo": "Ingles",
       "texto": "Poseo titulo de auxiliar bilingüe en el instituto de ingles de la localidad de Elisa"
     }
@@ -47,13 +47,6 @@
       "link": "#proyectoss"
     },
     {
-      "id": 5,
-      "photo": "./assets/imagenes/paginaPrueba.PNG",
-      "title": "prueba 1",
-      "text": "Esta es una simple pagina de prueba donde estaba experimentando distintas cosas con HTML y CSS, simplemente tiene uso de videos, imagenes, distintas formas de colocar texto y hubicaciones de caja, es solo para el ejemplo del portfolio",
-      "link": "#proyectoss"
-    },
-    {
       "id": 7,
       "photo": "./assets/imagenes/portfolioAngular.png",
       "title": "Esta misma pagina",
@@ -61,22 +54,54 @@
       "link": "https://github.com/Catul0/Modulo-3-terminado.git"
     }
   ],
-  "miSlider": [
+  "misSkills": [
     {
       "id": 1,
-      "photo": "./assets/imagenes/andlu.PNG"
+      "titulo": "PYTHON",
+      "texto": "Python aprendi con cursos de Udemy, hice una pequeña app",
+      "nivel": "Medio Bajo"
     },
     {
       "id": 2,
-      "photo": "./assets/imagenes/generala.PNG"
+      "titulo": "HTML",
+      "texto": "HTML aprendi de manera autodidacta y en el Argentina Programa",
+      "nivel": "Muy Bueno"
     },
     {
-      "id": 3,
-      "photo": "./assets/imagenes/paginaPrueba.PNG"
+      "id": 5,
+      "titulo": "Github",
+      "texto": "Github lo aprendi a usar en el curso de Argentina Programa",
+      "nivel": "Bueno"
     },
     {
-      "id": 4,
-      "photo": "./assets/imagenes/primerPortfolio.PNG"
+      "id": 6,
+      "titulo": "C++",
+      "texto": "C++ lo aprendí en la universidad UTN frsf y de manera Autodidacta",
+      "nivel": "Muy Bueno"
+    },
+    {
+      "id": 7,
+      "titulo": "CSS",
+      "texto": "CSS lo conozco de Argentina Programa y además profundice mis habilidades de manera autodidacta",
+      "nivel": "Bueno"
+    },
+    {
+      "id": 8,
+      "titulo": "INGLES",
+      "texto": "Tengo titulo de auxiliar bilingüe",
+      "nivel": "Muy Bueno"
+    },
+    {
+      "id": 9,
+      "titulo": "ANGULAR",
+      "texto": "Aprendido en argentina programa, esta pagina esta hecha con Angular",
+      "nivel": "Bueno"
+    },
+    {
+      "id": 10,
+      "titulo": "asdnas",
+      "texto": "asdasdasdasd",
+      "nivel": "No especificado"
     }
   ]
 }
